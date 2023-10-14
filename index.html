@@ -4,70 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Frontend Things</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background: #555;
+        }
+
+        #main {
+            height: inherit;
+            width: inherit;
+        }
+
+        .listBox {
+
+            width: inherit;
+            min-height: inherit;
+            padding: 2%;
+            background: #444;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 1rem;
+            align-items: start;
+            justify-content: space-between;
+            box-shadow: 0px 0px 10px #333;
+        }
+
+        .listBox a {
+            height: 10vh;
+            width: 20vw;
+            display: flex;
+            font-size: medium;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            filter: drop-shadow(0px 0px 10px black);
+            border-radius: 1rem;
+            letter-spacing: 2px;
+            color: white;
+            transition: .3s ease-in-out;
+        }
+
+
+        .listBox a:hover {
+            scale: 1.1;
+            filter: drop-shadow(0px 0px 10px white);
+        }
+
+        h1 {
+            padding: 5vh;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="main">
 
-        <h4 class="login">Log in</h4>
-        <h2 class="signup">Sign up</h2>
+        <center>
+            <h1>All The Frontend Things Lies Here..</h1>
 
-        <div class="inputDiv">
-            <label for="name">
-                <h5>
-                    <span class="hidddenSpanLetters one">
-                        Your Email
-                    </span>
-                    <input class="one" type="email" name="email" id="email" placeholder="Your Email">
-                </h5>
-            </label>
+        </center>
 
-            <label for="email">
-                <h5>
-                    <span class="hidddenSpanLetters two">
-                        Name
-                    </span>
-                    <input class="two" type="name" name="name" placeholder="Name">
-                </h5>
-            </label>
-
-            <label for="password">
-                <h5>
-                    <span class="hidddenSpanLetters three">
-                        Password
-                    </span>
-                    <input class="three" type="text" name="password" placeholder="Password">
-                </h5>
-            </label>
-        </div>
-        <button type="submit" class="submitButton">Sign up</button>
-
-        <h5 class="orSignup">Or sign up with social account</h5>
-
-        <div class="socialAcountDiv">
-            <a href="" class="facebook socialButtons">
-                <i class="ri-facebook-fill"></i>
-                <span>facebook</span>
-            </a>
-            <a href="" class="twitter socialButtons">
-                <i class="ri-twitter-fill"></i>
-                <span>twitter</span>
+        <div class="listBox">
+            <a href="/login.html">
+                Login System
             </a>
         </div>
-
-        <footer class="loginFooter">
-            <p>
-                By signing you agree to our <span class="footerTextBold">terms of use and privacy policy</span>
-            </p>
-        </footer>
-
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
