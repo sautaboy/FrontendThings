@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    padding: 5% 3%;
+}
+
+h4.login {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 2%;
+}
+
+h2.signup {
+    margin-bottom: 2%;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5vh;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3vh;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputDiv label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+
+.inputDiv label h5 {
+    background: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv label h5 span {
+    /* opacity: 0; */
+    margin-bottom: 1vh;
+}
+
+
+
+
+
+
+
+
+.inputDiv label input {
+    width: 100%;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding-bottom: 3px;
+}
+
+button.submitButton {
+    width: 100%;
+    padding: 2rem;
+    background: black;
+    color: white;
+    padding: 1vh;
+    border-radius: 2rem;
+    letter-spacing: 1px;
+    margin: 2vh 0;
+}
+
+h5.orSignup {
+    text-align: center;
+    width: 100%;
+}
+
+.socialAcountDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 3vh 0;
+}
+
+.socialAcountDiv a.socialButtons {
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1vh;
+    letter-spacing: 1px;
+    color: black;
+    border: 1px solid black;
+
+    border-radius: 1.2rem;
+    width: 40%;
+}
+
+footer.loginFooter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 4vh;
+    left: 50%;
+}
+
+footer p 
+{
+    text-align: center;
+}
+
+footer p span.footerTextBold {
+    font-weight: bold;
+}
+
