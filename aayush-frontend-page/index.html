@@ -16,7 +16,9 @@
 
 <body>
     <div id="main">
-        <div id="nav">
+        <i class="ri-menu-line" id="ham-burger"></i>
+
+        <div id="nav" class="">
             <a href="#" id="logo-name">logo-name</a>
             <div id="left-nav-list">
                 <a href="#">name</a>
@@ -24,8 +26,8 @@
                 <a href="#">name</a>
             </div>
             <div id="right-nav-list">
-                <a href="#">sign up</a>
-                <a href="#">log in</a>
+                <a href="#" id="sign-up-button">sign up</a>
+                <a href="#" id="log-in-button">log in</a>
             </div>
         </div>
 
@@ -172,6 +174,23 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        // hammering nav
+        document.querySelector("#ham-burger").addEventListener("click", function (e) {
+
+            if (e.target.classList.contains("ri-menu-line")) {
+                e.target.classList.remove("ri-menu-line")
+                e.target.classList.add("ri-close-line")
+            }
+            else {
+                e.target.classList.remove("ri-close-line")
+                e.target.classList.add("ri-menu-line")
+            }
+            document.querySelector("#nav").classList.toggle("open");
+        })
+    </script>
 </body>
 
 </html>
